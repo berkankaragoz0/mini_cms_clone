@@ -1,0 +1,20 @@
+<div class="container mt-3" id="main-container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>name</td>
+        <td>status</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let content of contents">
+        <td>
+          {{ content.name }}
+        </td>
+        <td>
+          {{ content.status }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

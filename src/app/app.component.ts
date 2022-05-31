@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CMS-Clone';
+  title = 'CMS-Clone-mini';
+  user_name='Berkan'
 }
