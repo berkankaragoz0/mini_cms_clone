@@ -1,13 +1,12 @@
 <ul class="nav nav-tabs mt-3">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="dealing/content"
-      >Content Management</a
-    >
+    <a class="nav-link" aria-current="page" href="dealing/contract">Contract Management</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="dealing/license"
-      >License Managament</a
-    >
+    <a class="nav-link active" aria-current="page" href="dealing/content">Content Management</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="dealing/license">License Managament</a>
   </li>
 </ul>
 
@@ -26,9 +25,7 @@
             />
           </div>
           <div class="col-5">
-            <button type="button" class="btn btn-outline-primary btn-sm mr-2">
-              Filter
-            </button>
+            <button type="button" class="btn btn-outline-primary btn-sm mr-2">Filter</button>
           </div>
         </div>
       </div>
@@ -129,13 +126,7 @@
           >
             Close
           </button>
-          <button
-            [disabled]="addForm.invalid"
-            type="submit"
-            class="btn btn-primary"
-          >
-            Save
-          </button>
+          <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>

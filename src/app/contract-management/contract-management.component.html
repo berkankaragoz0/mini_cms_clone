@@ -1,1 +1,179 @@
-<p>contract-management works!</p>
+<ul class="nav nav-tabs mt-3">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="dealing/contract">Contract Management</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="dealing/content">Content Management</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="dealing/license">License Managament</a>
+  </li>
+</ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-2">
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Content Name"
+              aria-label="content Name"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="col-5">
+            <button type="button" class="btn btn-outline-primary btn-sm mr-2">Filter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-sm"
+        data-bs-toggle="modal"
+        data-bs-target="#addContentModal"
+      >
+        New Content
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Add Content Modal -->
+<!--<form #addForm="ngForm" (ngSubmit)="onAddContent(addForm)">
+  <div
+    class="modal fade"
+    id="addContentModal"
+    tabindex="-1"
+    aria-labelledby="addContentModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addContentModalLabel">Add Content</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="container mt-2">
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group mb-3 mr-2">
+                  <input
+                    ngModel
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Content Name"
+                    aria-label="Content Name"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-3 mr-2">
+                  <input
+                    ngModel
+                    name="posterurl"
+                    type="text"
+                    class="form-control"
+                    placeholder="Poster Url"
+                    aria-label="Poster Url"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="input-group mb-3 mr-2">
+                  <input
+                    ngModel
+                    name="status"
+                    type="text"
+                    class="form-control"
+                    placeholder="Status"
+                    aria-label="Status"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-3 mr-2">
+                  <input
+                    ngModel
+                    name="videourl"
+                    type="text"
+                    class="form-control"
+                    placeholder="Video Url"
+                    aria-label="Video Url"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            id="add-content-form"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button
+            [disabled]="addForm.invalid"
+            type="submit"
+            class="btn btn-primary"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>-->
+<div class="container mt-3" id="main-container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>name</td>
+        <td>poster url</td>
+        <td>status</td>
+        <td>video url</td>
+        <td style="text-align: center">options</td>
+      </tr>
+    </thead>
+    <tbody>
+      <!--<tr *ngFor="let content of contents">
+        <td>
+          {{ content.name }}
+        </td>
+        <td>
+          {{ content.posterurl }}
+        </td>
+        <td>
+          {{ content.status }}
+        </td>
+        <td>
+          {{ content.videourl }}
+        </td>
+        <td style="text-align: center">
+          <a
+            (click)="onDeleteContent(content.id)"
+            class="btn btn-secondary tooltips"
+            data-placement="top"
+            data-original-title="Delete"
+          >
+            <i class="fa-solid fa-trash-can"></i>
+          </a>
+        </td>
+      </tr>-->
+    </tbody>
+  </table>
+</div>

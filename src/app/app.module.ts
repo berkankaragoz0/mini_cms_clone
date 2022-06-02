@@ -13,6 +13,7 @@ import { VodContentsComponent } from './vod-contents/vod-contents.component';
 import { ContractManagementComponent } from './contract-management/contract-management.component';
 
 const routes :Routes=[
+  {path:"dealing/contract",component:ContractManagementComponent},
   {path:"dealing/content",component:ContentManagamentComponent},
   {path:"dealing/license",component:LicenseManagamentComponent},
   {path:"vodcontent",component:VodContentsComponent}
