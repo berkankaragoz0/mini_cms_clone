@@ -10,6 +10,7 @@ import { ContentService } from './content.service';
 import { FormsModule } from '@angular/forms';
 import { LicenseManagamentComponent } from './license-managament/license-managament.component';
 import { VodContentsComponent } from './vod-contents/vod-contents.component';
+import { ContractManagementComponent } from './contract-management/contract-management.component';
 
 const routes :Routes=[
   {path:"dealing/content",component:ContentManagamentComponent},
@@ -24,6 +25,7 @@ const routes :Routes=[
     ContentManagamentComponent,
     LicenseManagamentComponent,
     VodContentsComponent,
+    ContractManagementComponent,
 
   ],
   imports: [
